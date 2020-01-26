@@ -16,7 +16,7 @@ public class Entrance : MonoBehaviour
         }
         else
         {
-            Debug.Log("wrong pwd");
+            Debug.LogWarning("wrong pwd");
         }
     }
 
