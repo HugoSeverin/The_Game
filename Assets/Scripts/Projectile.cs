@@ -34,7 +34,7 @@ public class Projectile : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            collision.GetComponentInChildren<HealthBar>().hp -= 25;
+            collision.GetComponentInChildren<HealthBar>().hp -= 5;
             Instantiate(attackEffect, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }

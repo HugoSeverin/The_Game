@@ -78271,6 +78271,11 @@ PrefabInstance:
       propertyPath: wayPoint2
       value: 
       objectReference: {fileID: 616314476}
+    - target: {fileID: 4604167178195154666, guid: 8c4d18eb562704a6c87f1b1f1ba75c95,
+        type: 3}
+      propertyPath: attackRange
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 7584436986254609304, guid: 8c4d18eb562704a6c87f1b1f1ba75c95,
         type: 3}
       propertyPath: maxHP
@@ -78288,7 +78293,7 @@ PrefabInstance:
     - target: {fileID: 6243146761537097373, guid: bd489aa6d07184faaa1a41ea5b11121f,
         type: 3}
       propertyPath: m_Name
-      value: Canvas
+      value: Life
       objectReference: {fileID: 0}
     - target: {fileID: 6243146761537097372, guid: bd489aa6d07184faaa1a41ea5b11121f,
         type: 3}
@@ -78404,6 +78409,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6243146761537097375, guid: bd489aa6d07184faaa1a41ea5b11121f,
+        type: 3}
+      propertyPath: maxHP
+      value: 50
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd489aa6d07184faaa1a41ea5b11121f, type: 3}
