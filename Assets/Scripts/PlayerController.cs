@@ -13,6 +13,11 @@ public class PlayerController : MonoBehaviour
     public float movespeed = 5.0f;
     public string scenePassword;
 
+    //Attaque
+    public GameObject arrow;
+    public float arrowForce;
+
+    //Obj
     public bool IgotKey = false;
 
     private void Awake()
@@ -50,6 +55,12 @@ public class PlayerController : MonoBehaviour
         {
             Destroy(gameObject);
             Debug.Log("MDR t'es mort sale merde");
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            GameObject newArrow = Instantiate(arrow, transform.position, Quaternion.identity);
+            newArrow.GetComponent<Rigidbody2D>().AddRelativeForce(new Vector2(0f, arrowForce));
         }
     }
 
