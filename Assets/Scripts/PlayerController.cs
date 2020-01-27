@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
     public float movespeed = 5.0f;
     public string scenePassword;
 
+    public bool gotKey = false;
+
     private void Awake()
     {
         if(instance == null)
