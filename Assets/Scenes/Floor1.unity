@@ -217,7 +217,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: [{fileID: 1133359276}]
+  m_Children: []
   m_Father: {fileID: 842800314}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3702,7 +3702,7 @@ GameObject:
   - component: {fileID: 587744052}
   - component: {fileID: 587744051}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Dialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4255,7 +4255,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &1016915157 stripped
 RectTransform:
@@ -4356,7 +4356,7 @@ GameObject:
   - component: {fileID: 1133359272}
   - component: {fileID: 1133359271}
   m_Layer: 0
-  m_Name: npc_armor_guy_1
+  m_Name: PNJ
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4416,7 +4416,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0014002323, y: -0.20032108}
+  m_Offset: {x: -0.0014002323, y: -0.22498977}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4427,7 +4427,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.90881777, y: 1.4800737}
+  m_Size: {x: 0.90881777, y: 1.726753}
   m_EdgeRadius: 0
 --- !u!212 &1133359275
 SpriteRenderer:
@@ -4465,7 +4465,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1088937535
   m_SortingLayer: 3
-  m_SortingOrder: 2
+  m_SortingOrder: 0
   m_Sprite: {fileID: -8753231079734562364, guid: 8db8f10488d8740a091529f5fb4ad3ce,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4489,8 +4489,8 @@ Transform:
   m_LocalPosition: {x: 3.62, y: 2.22, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 222281249}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1144352533
 GameObject:
@@ -78445,6 +78445,11 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 6243146761537097360, guid: bd489aa6d07184faaa1a41ea5b11121f,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd489aa6d07184faaa1a41ea5b11121f, type: 3}
 --- !u!1001 &6470990094258500943
