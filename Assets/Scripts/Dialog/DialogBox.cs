@@ -11,8 +11,13 @@ public class DialogBox : MonoBehaviour {
     [SerializeField]
     public Text m_Text = null;
 
-    public void DisplayDialog(Dialog _Dialog) {
-        m_CharacterAvatar.sprite = _Dialog.GetSpeakerAvatar();
+    public void DisplayDialog(Dialog _Dialog, bool avatar) {
+        if (avatar) {
+            m_CharacterAvatar.sprite = _Dialog.GetSpeakerAvatar();
+        } else {
+            m_CharacterAvatar.sprite = null;
+        }
+        
         m_Text.text = _Dialog.GetText();
         gameObject.SetActive(true);
     }

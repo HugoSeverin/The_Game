@@ -14,7 +14,7 @@ public class DialogPlayer : MonoBehaviour {
     public bool playerInRange;
 
     private void PlayDialog() {
-        m_DialogBox.DisplayDialog(m_Dialog);
+        m_DialogBox.DisplayDialog(m_Dialog, true);
     }
 
     // Start is called before the first frame update

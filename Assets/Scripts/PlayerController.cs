@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
     public float movespeed = 5.0f;
     public string scenePassword;
 
-    public bool gotKey = false;
+    private bool IgotKey = false;
 
     private void Awake()
     {
@@ -51,5 +51,10 @@ public class PlayerController : MonoBehaviour
             Destroy(gameObject);
             Debug.Log("MDR t'es mort sale merde");
         }
+    }
+
+    public void gotKey() {
+        Debug.Log("you got the key");
+        IgotKey = true;
     }
 }

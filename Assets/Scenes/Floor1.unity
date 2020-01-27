@@ -2579,6 +2579,33 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
+  - first: {x: 237, y: 244, z: 0}
+    second:
+      m_TileIndex: 20
+      m_TileSpriteIndex: 20
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
+  - first: {x: 244, y: 258, z: 0}
+    second:
+      m_TileIndex: 20
+      m_TileSpriteIndex: 20
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
+  - first: {x: 245, y: 258, z: 0}
+    second:
+      m_TileIndex: 20
+      m_TileSpriteIndex: 20
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
   m_AnimatedTiles: {}
   m_TileAssetArray:
   - m_RefCount: 22
@@ -2621,8 +2648,8 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 176de5d3093a549f3bab6f767c501f08, type: 2}
   - m_RefCount: 7
     m_Data: {fileID: 11400000, guid: a32e240a8c04f45a682e64837174bef4, type: 2}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 3
+    m_Data: {fileID: 11400000, guid: 6ec232050dcfd4e6688111232da00e40, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 22
     m_Data: {fileID: -3590207636862898149, guid: f59ab967267b349c28e94f07a7022c68,
@@ -2683,10 +2710,11 @@ Tilemap:
   - m_RefCount: 7
     m_Data: {fileID: 1421881976529914242, guid: f59ab967267b349c28e94f07a7022c68,
       type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 3
+    m_Data: {fileID: 5805510532139901080, guid: 2319f055eaba34014976b7c957e49616,
+      type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 256
+  - m_RefCount: 259
     m_Data:
       e00: 1
       e01: 0
@@ -2705,12 +2733,12 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 256
+  - m_RefCount: 259
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Origin: {x: -25, y: -15, z: 0}
-  m_Size: {x: 52, y: 31, z: 1}
+  m_Size: {x: 271, y: 274, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -2750,7 +2778,31 @@ CompositeCollider2D:
   m_ColliderPaths:
   - m_Collider: {fileID: 222281254}
     m_ColliderPaths:
-    - - X: 230000000
+    - - X: 2460000000
+        Y: 2590000128
+      - X: 2440000000
+        Y: 2590000128
+      - X: 2440000000
+        Y: 2580000000
+      - X: 2460000000
+        Y: 2580000000
+    - - X: 2380000000
+        Y: 2449999872
+      - X: 2369999872
+        Y: 2449999872
+      - X: 2369999872
+        Y: 2440000000
+      - X: 2380000000
+        Y: 2440000000
+    - - X: 240000000
+        Y: -130000000
+      - X: 270000000
+        Y: -130000000
+      - X: 270000000
+        Y: -120000000
+      - X: 230000000
+        Y: -120000000
+      - X: 230000000
         Y: -140000000
       - X: 140000000
         Y: -140000000
@@ -2966,16 +3018,16 @@ CompositeCollider2D:
         Y: -150000000
       - X: 240000000
         Y: -150000000
-      - X: 240000000
-        Y: -130000000
-      - X: 270000000
-        Y: -130000000
-      - X: 270000000
-        Y: -120000000
-      - X: 230000000
-        Y: -120000000
   m_CompositePaths:
     m_Paths:
+    - - {x: 246, y: 259.00003}
+      - {x: 244, y: 259.00003}
+      - {x: 244, y: 258}
+      - {x: 246, y: 258}
+    - - {x: 238, y: 244.99998}
+      - {x: 236.99998, y: 244.99998}
+      - {x: 236.99998, y: 244}
+      - {x: 238, y: 244}
     - - {x: 24, y: -13}
       - {x: 27, y: -13}
       - {x: 27, y: -12}
@@ -3956,8 +4008,6 @@ GameObject:
   - component: {fileID: 898096447}
   - component: {fileID: 898096451}
   - component: {fileID: 898096452}
-  - component: {fileID: 898096453}
-  - component: {fileID: 898096454}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -4089,7 +4139,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movespeed: 7
   scenePassword: 
-  gotKey: 0
 --- !u!95 &898096452
 Animator:
   serializedVersion: 3
@@ -4109,30 +4158,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &898096453
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 898096446}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04aff1bf82fa8489d8f8f2e16f6cbaed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &898096454
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 898096446}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d75ae636ee7d449ca964c8a1e9233a91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1009348255
 GameObject:
   m_ObjectHideFlags: 0
@@ -4161,9 +4186,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1009348255}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52e18d61a03c54a959246b4fcd2cab28, type: 3}
+  m_Script: {fileID: 11500000, guid: b23636454b5cd46498e1bf40a8393528, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInRange: 0
+  m_DialogBox: {fileID: 1973760390}
+  m_Dialog: {fileID: 11400000, guid: 21ae0d620f20d9949b12fa893911d9eb, type: 2}
+  keyPresent: 1
+  player: {fileID: 898096451}
+  rend: {fileID: 0}
 --- !u!70 &1009348257
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -4547,7 +4578,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Space
+  m_Text: E
 --- !u!222 &1144352536
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10262,7 +10293,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: -7733003093127646540, guid: 8db8f10488d8740a091529f5fb4ad3ce,
+  m_Sprite: {fileID: -8753231079734562364, guid: 8db8f10488d8740a091529f5fb4ad3ce,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
