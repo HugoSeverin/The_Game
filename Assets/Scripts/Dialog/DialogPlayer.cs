@@ -22,7 +22,7 @@ public class DialogPlayer : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        if(Input.GetKeyDown(KeyCode.Space) && playerInRange){
+        if(Input.GetKeyDown(KeyCode.E) && playerInRange){
             if(m_DialogBox.gameObject.activeInHierarchy){
                             m_DialogBox.CloseDialog();
                         }else  {
