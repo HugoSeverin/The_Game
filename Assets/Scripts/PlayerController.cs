@@ -41,4 +41,13 @@ public class PlayerController : MonoBehaviour
         moveV = Input.GetAxisRaw("Vertical") * movespeed;
         rb.velocity = new Vector2(moveH, moveV);
     }
+
+    private void Update()
+    {
+        if (GetComponentInChildren<HealthBar>().hp <= 0)
+        {
+            Destroy(gameObject);
+            Debug.Log("MDR t'es mort sale merde");
+        }
+    }
 }
