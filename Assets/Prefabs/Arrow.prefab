@@ -91,6 +91,7 @@ GameObject:
   - component: {fileID: 4232339162276209164}
   - component: {fileID: 4232339162276209165}
   - component: {fileID: 8238308355481864440}
+  - component: {fileID: 2286228991527957275}
   m_Layer: 0
   m_Name: Arrow
   m_TagString: Untagged
@@ -106,7 +107,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4232339162276209162}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.45, y: 1.89, z: 9.231967}
+  m_LocalPosition: {x: 5.45, y: 1.89, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4232339161518004041}
@@ -160,3 +161,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &2286228991527957275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4232339162276209162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed375826cfbe641a5b2b156ba2a5eabb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 5

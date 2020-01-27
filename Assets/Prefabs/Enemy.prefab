@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4604167178195154660}
   - component: {fileID: 4604167178195154667}
   - component: {fileID: 4604167178195154666}
+  - component: {fileID: -5085213865017885860}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -122,6 +123,22 @@ MonoBehaviour:
   projectile: {fileID: 7813459683532773486, guid: c4d7760c280c946b6b21c4ed36decc7a,
     type: 3}
   firePoint: {fileID: 4604167178771656107}
+--- !u!58 &-5085213865017885860
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4604167178195154665}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.3333334
 --- !u!1 &4604167178771656106
 GameObject:
   m_ObjectHideFlags: 0

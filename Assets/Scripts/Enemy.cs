@@ -39,12 +39,21 @@ public class Enemy : MonoBehaviour
         }
 
         //TODO juste un test, à bouger du code quand on aura instancié l'attaque du joueur
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            GetComponentInChildren<HealthBar>().hp -= 20;
-        }
+        TakeDamage(GetComponentInChildren<Arrow>().damage);
+
         // detruire le mob quand il est à 0hp
         if(GetComponentInChildren<HealthBar>().hp <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    private void TakeDamage(int damage)
+    {
+        GetComponentInChildren<HealthBar>().hp -= damage;
+
+        // detruire le mob quand il est à 0hp
+        if (GetComponentInChildren<HealthBar>().hp <= 0)
         {
             Destroy(gameObject);
         }
