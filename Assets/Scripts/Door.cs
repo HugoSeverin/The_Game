@@ -16,8 +16,8 @@ public class Door : MonoBehaviour{
     }
 
     void Update() {
-        if (playerInRange) {
-            if (GetComponentInChildren<PlayerController>().IgotKey) {
+        if (playerInRange && Input.GetKeyDown(KeyCode.E)) {
+            if (GetComponentInChildren<PlayerController>().playerGotKey()) {
                 Debug.Log("you got the key");
                 GetComponent<SpriteRenderer>().sprite = porteOuverte;
                 rend.enabled = false;
