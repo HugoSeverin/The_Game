@@ -11,4 +11,5 @@ public class Arrow : MonoBehaviour
         collision.SendMessage("TakeDamage", damage, SendMessageOptions.DontRequireReceiver);
         Destroy(gameObject);
     }
+
 }
