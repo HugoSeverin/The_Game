@@ -43,6 +43,11 @@ public class Enemy : MonoBehaviour
         {
             GetComponentInChildren<HealthBar>().hp -= 20;
         }
+        // detruire le mob quand il est à 0hp
+        if(GetComponentInChildren<HealthBar>().hp <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void Patrol()
