@@ -239,7 +239,7 @@ GameObject:
   - component: {fileID: 6243146761537097374}
   - component: {fileID: 6243146761537097375}
   m_Layer: 0
-  m_Name: Canvas 1
+  m_Name: Life
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -342,5 +342,5 @@ MonoBehaviour:
   hpImage: {fileID: 6243146760928524366}
   hpEffectImage: {fileID: 6243146760558179082}
   hp: 0
-  maxHP: 120
+  maxHP: 25
   hurtSpeed: 0.005

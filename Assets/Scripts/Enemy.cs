@@ -38,7 +38,6 @@ public class Enemy : MonoBehaviour
             anim.SetBool("isAttack", true);
         }
 
-        //TODO juste un test, à bouger du code quand on aura instancié l'attaque du joueur
         TakeDamage(GetComponentInChildren<Arrow>().damage);
 
         // detruire le mob quand il est à 0hp
