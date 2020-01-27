@@ -10,17 +10,18 @@ public class Door : MonoBehaviour{
 
     public Renderer rend;
 
+    public PlayerController player;
+
     private void Start() {
+        player = FindObjectOfType<PlayerController>();
         rend = GetComponent<Renderer>();
         rend.enabled = true;
     }
 
     void Update() {
         if (playerInRange && Input.GetKeyDown(KeyCode.E)) {
-            if (GetComponentInChildren<PlayerController>().playerGotKey()) {
-                Debug.Log("you got the key");
-                GetComponent<SpriteRenderer>().sprite = porteOuverte;
-                rend.enabled = false;
+            if (player.playerGotKey()) {
+                Destroy(gameObject);
             }
         }
     }

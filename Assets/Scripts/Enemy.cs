@@ -38,7 +38,7 @@ public class Enemy : MonoBehaviour
             anim.SetBool("isAttack", true);
         }
 
-        TakeDamage(GetComponentInChildren<Arrow>().damage);
+        // TakeDamage(GetComponentInChildren<Arrow>().damage);
 
         // detruire le mob quand il est à 0hp
         if(GetComponentInChildren<HealthBar>().hp <= 0)
