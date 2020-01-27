@@ -4140,7 +4140,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52e18d61a03c54a959246b4fcd2cab28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventory: 1
 --- !u!70 &1009348257
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
