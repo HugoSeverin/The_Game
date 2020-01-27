@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
     public float movespeed = 5.0f;
     public string scenePassword;
 
-    private bool IgotKey = false;
+    public bool IgotKey = false;
 
     private void Awake()
     {
@@ -56,5 +56,9 @@ public class PlayerController : MonoBehaviour
     public void gotKey() {
         Debug.Log("you got the key");
         IgotKey = true;
+    }
+
+    public bool playerGotKey() {
+        return IgotKey;
     }
 }
