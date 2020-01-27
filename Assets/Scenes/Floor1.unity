@@ -4121,17 +4121,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04aff1bf82fa8489d8f8f2e16f6cbaed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventory:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!114 &898096454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4144,9 +4133,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d75ae636ee7d449ca964c8a1e9233a91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentInterObj: {fileID: 0}
-  currentInterObjScript: {fileID: 0}
-  inventory: {fileID: 898096453}
 --- !u!1 &1009348255
 GameObject:
   m_ObjectHideFlags: 0
@@ -4178,7 +4164,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52e18d61a03c54a959246b4fcd2cab28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventory: 1
 --- !u!70 &1009348257
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -4357,7 +4342,7 @@ GameObject:
   - component: {fileID: 1133359271}
   m_Layer: 0
   m_Name: PNJ
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
