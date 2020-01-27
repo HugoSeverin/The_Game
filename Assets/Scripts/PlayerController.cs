@@ -57,7 +57,7 @@ public class PlayerController : MonoBehaviour
             Debug.Log("MDR t'es mort sale merde");
         }
 
-        if (Input.GetKeyDown(KeyCode.L))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             GameObject newArrow = Instantiate(arrow, transform.position, Quaternion.identity);
             newArrow.GetComponent<Rigidbody2D>().AddRelativeForce(new Vector2(0f, arrowForce));
