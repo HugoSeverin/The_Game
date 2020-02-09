@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79285def83ccc1a47a27bf001d546bef, type: 3}
   m_Name: keyDialog
   m_EditorClassIdentifier: 
-  m_Text: You looted a key !
+  m_Text: 'You looted a key !
+
+    Press E to use it.'
   m_SpeakerAvatar: {fileID: 0}
