@@ -7,6 +7,11 @@ public class Door : MonoBehaviour{
 
     [SerializeField]
     public bool playerInRange;
+    [SerializeField]
+    private DialogBox m_DialogBox = null;
+
+    [SerializeField]
+    private Dialog m_Dialog = null;
 
     public Renderer rend;
 
@@ -19,11 +24,22 @@ public class Door : MonoBehaviour{
     }
 
     void Update() {
-        if (playerInRange && Input.GetKeyDown(KeyCode.E)) {
-            if (player.playerGotKey()) {
-                Destroy(gameObject);
+        if (playerInRange) {
+            if (Input.GetKeyDown(KeyCode.E)){
+                if (player.playerGotKey()) {
+                    Destroy(gameObject);
+                }
+                else
+                {
+                    PlayDialog();
+                }
             }
+
         }
+    }
+    private void PlayDialog()
+    {
+        m_DialogBox.DisplayDialog(m_Dialog, false);
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
@@ -35,6 +51,7 @@ public class Door : MonoBehaviour{
     private void OnTriggerExit2D(Collider2D other) {
         if (other.CompareTag("Player")) {
             playerInRange = false;
+            m_DialogBox.CloseDialog();
         }
     }
 }
